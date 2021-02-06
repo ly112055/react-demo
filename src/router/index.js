@@ -27,6 +27,23 @@ exports.routes = [
               },
             ],
           },
+          {
+            path: '/demo',
+            name: 'demo',
+            component: '../pages/content/index.js',
+            routes: [
+              {
+                path: '/demo/miniGame',
+                name: '小游戏',
+                component: '../pages/demo/miniGame.jsx',
+              },
+              {
+                path: '/demo/hookTest',
+                name: 'HookTest',
+                component: '../pages/demo/hookTest.jsx',
+              },
+            ],
+          },
         ],
       },
     ],

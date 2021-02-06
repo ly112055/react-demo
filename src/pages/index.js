@@ -19,8 +19,6 @@ class Index extends React.Component {
     // TODO:重定向到登录页面
     if (!sessionStorage.getItem('tokenTest')) {
       router.push('/login');
-    } else {
-      router.push('/goods/goodsManagement');
     }
   }
   toggle = () => {
